@@ -11,12 +11,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <meta name="theme-color" content="#21202C">
     <script src="https://kit.fontawesome.com/c3bb389c57.js" crossorigin="anonymous"></script>  
 </head>
 <body>
     <!-- Make Header into JS? or maybe make a react website? i dunno -->
-    <header>
+    <header id="header" data-menu-hidden="true">
         <div class="container">
             <ul class="left-header">
                 <li><a href="./index.html">Home</a></li>
@@ -31,16 +32,29 @@
             <ul class="right-header">
                 <li><a class="button" href="">Apply Here</a></li>
                 <li><a class="button" href="">Scholarships</a></li>
+                <li><div id="hamburger" class="button" href=""><i class="fa-solid fa-bars"></i></div></li>
             </ul>
         </div>
+
+        <ul class="menu" id="menu" data-menu-hidden="true">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./staff.html">Staff</a></li>
+            <li><a href="./opportunities.html">Opportunities</a></li>
+            <li><a class="button" href="">Apply Here</a></li>
+            <li><a class="button" href="">Scholarships</a></li>
+            <li id="hamburger-close-button"><i class="fa-solid fa-x fa-xl"></i></li>
+        </ul>
     </header>
     
     <section id="hero">
         <div class="overlay">
             <p>Welcome To</p>
             <h1>The Hispanic American Chamber of Commerce Foundation of Essex County</h1>
+            <i class=" arrow-down fa-solid fa-angle-down fa-2xl"></i>
+
         </div>
-        <div class="slide" style="background-image: url('./assets/IMG_3829.webp'); background-position-y: 30%;"></div>
+        <div class="slide" style="background-image: url('./assets/IMG_3829.webp'); background-position-y: 30%;">
+        </div>
     </section>
     <section id="description">
         <div class="container">
@@ -107,25 +121,29 @@
                 
                 <div class="content">
                     <h3>Email</h3>
-                    <p>haccfoundation@gmail.com</p>
+                    <a href="mailto:haccfoundation@gmail.com">haccfoundation@gmail.com</a>
                     <h3>Phone</h3>
-                    <p>(973) 483 - 4290</p>
+                    <a href="tel:973-483-4290">(973) 483 - 4290</a>
                     <h3>Address</h3>
-                    <p>P.O Box 400284</p>
-                    <p>197 Bloomfield Ave</p>
-                    <p>Newark, NJ 07104</p>
-                    <h3>Hours</h3>
-                    <p>10 A.M - 4 P.M, Mon-Fri</p>
+                    <a href="https://maps.app.goo.gl/axqqNH3ajXq4hBoA9">
+                        <p>P.O Box 400284</p>
+                        <p>197 Bloomfield Ave</p>
+                        <p>Newark, NJ 07104</p>
+                        <h3>Hours</h3>
+                        <p>10 A.M - 4 P.M, Mon-Fri</p>
+                    </a>
+
                     <ul>
-                        <li><a class="button" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a class="button" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a class="button" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a class="button" href="https://www.linkedin.com/company/the-hispanic-american-chamber-of-commerce-foundation-of-essex-county/about/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a class="button" href="https://www.facebook.com/donmikepresident/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="button" href="https://www.instagram.com/haccfoundation/"><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
     
                 </div>
             </div>
         </div>
-
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

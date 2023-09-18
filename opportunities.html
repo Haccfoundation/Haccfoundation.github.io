@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HACCF of Opportunities</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css?v=1.1">
         <script src="https://kit.fontawesome.com/c3bb389c57.js" crossorigin="anonymous"></script>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
@@ -12,7 +12,7 @@
         <link rel="manifest" href="./assets/favicon/site.webmanifest">
     </head>
 <body>
-    <header>
+    <header id="header" data-menu-hidden="true">
         <div class="container">
             <ul class="left-header">
                 <li><a href="./index.html">Home</a></li>
@@ -27,8 +27,18 @@
             <ul class="right-header">
                 <li><a class="button" href="">Apply Here</a></li>
                 <li><a class="button" href="">Scholarships</a></li>
+                <li><div id="hamburger" class="button" href=""><i class="fa-solid fa-bars"></i></div></li>
             </ul>
         </div>
+
+        <ul class="menu" id="menu" data-menu-hidden="true">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./staff.html">Staff</a></li>
+            <li><a href="./opportunities.html">Opportunities</a></li>
+            <li><a class="button" href="">Apply Here</a></li>
+            <li><a class="button" href="">Scholarships</a></li>
+            <li id="hamburger-close-button"><i class="fa-solid fa-x fa-xl"></i></li>
+        </ul>
     </header>
 
     <section id="work-with-us">
@@ -46,13 +56,13 @@
             <h1>Partner With Us</h1>
             <p>If your organization/corporate would like to partner with us, send us an email at haccfoundation@gmail.com.</p>
             <div class="our-partners">
-                <h2>Corporate</h2>
+                <h2>Education</h2>
                 <div class="partner-grid">
                     <img src="./assets/partners/njit.webp" alt="">
                     <img src="./assets/partners/newark board of ed.webp" alt="">
                     <img src="./assets/partners/roberto clemente elementary.webp" alt="">
                 </div>
-                <h2>Education</h2>
+                <h2>Corporate</h2>
                 <div class="partner-grid">
                     <img src="./assets/partners/Panasonic.webp" alt="">
                     <img src="./assets/partners/Goya.webp" alt="">
@@ -83,25 +93,30 @@
                 
                 <div class="content">
                     <h3>Email</h3>
-                    <p>haccfoundation@gmail.com</p>
+                    <a href="mailto:haccfoundation@gmail.com">haccfoundation@gmail.com</a>
                     <h3>Phone</h3>
-                    <p>(973) 483 - 4290</p>
+                    <a href="tel:973-483-4290">(973) 483 - 4290</a>
                     <h3>Address</h3>
-                    <p>P.O Box 400284</p>
-                    <p>197 Bloomfield Ave</p>
-                    <p>Newark, NJ 07104</p>
-                    <h3>Hours</h3>
-                    <p>10 A.M - 4 P.M, Mon-Fri</p>
+                    <a href="https://maps.app.goo.gl/axqqNH3ajXq4hBoA9">
+                        <p>P.O Box 400284</p>
+                        <p>197 Bloomfield Ave</p>
+                        <p>Newark, NJ 07104</p>
+                        <h3>Hours</h3>
+                        <p>10 A.M - 4 P.M, Mon-Fri</p>
+                    </a>
+
                     <ul>
-                        <li><a class="button" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a class="button" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a class="button" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a class="button" href="https://www.linkedin.com/company/the-hispanic-american-chamber-of-commerce-foundation-of-essex-county/about/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a class="button" href="https://www.facebook.com/donmikepresident/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a class="button" href="https://www.instagram.com/haccfoundation/"><i class="fa-brands fa-instagram"></i></a></li>
                     </ul>
     
                 </div>
             </div>
         </div>
-
     </footer>
+
+    <script src="main.js"></script>
+
 </body>
 </html>
